@@ -1,0 +1,26 @@
+body {
+    /*The body's font is Tahoma, the font color is green, and the size is 40px*/
+    font-size:40px;
+    font-family: Tahoma, sans-serif;
+    color: rgba(90, 130, 65);
+  
+  }
+  
+  h2 {
+    /*The top heading's color is black, it's size is 60px, and it's font is Tahoma*/
+    color: rgba(0, 0, 0);
+    font-size: 60px;
+    font-family: Tahoma, sans-serif;
+  }
+  
+  h3 {
+    /*The subheadings have the same color as the body, are 50px, have a normal font weight, and are in the font Arial */
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+  }
+  
+  .link:hover { /* Makes links change their color from blue to red when mouse hovers over them */
+    color: rgba(255, 0, 0.2)
+  } 
+  
