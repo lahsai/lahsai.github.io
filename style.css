@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: rgb(86, 101, 236);
 }
 
 .header {
@@ -9,6 +9,12 @@ body {
   background-size: cover;
   position: relative;
 }
+
+.logo{ 
+	position:fixed; 
+	top:0; 
+	left:0; 
+} 
 
 .nav {
   display:flex;
@@ -33,9 +39,9 @@ body {
 
 .navigation-links ul li a {
   color:white;
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: Tahoma, sans-serif;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 22px;
 }
 
 .navigation-links ul li::after { /*inserts after nav links*/
@@ -54,12 +60,17 @@ body {
 
 .club-description{
   color:white;
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: Tahoma, sans-serif;
   width:90%;
   position: absolute;
-  top:1000%;
+  top:700%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.club-description h1 {
+  font-size: 60px;
+  font-weight: 500;
 }
 
