@@ -11,9 +11,18 @@ body {
 #logo { 
   position: absolute;
   top: 0px;
-  margin-bottom: px;
-  margin-right: 25px;
+  width: 125px;
+  height:125px;
+  margin-bottom: 25px;
+  display: flex;
 } 
+
+@media(max-width: 600px) {
+  #logo {
+    width: 90px;
+    height: 90px;
+  }
+}
 
 .navigation-links {
   display: flex;
@@ -33,7 +42,13 @@ body {
   text-decoration: none;
   color: white;
   font-family: Tahoma, sans-serif;
-  font-size: 3vh;
+  font-size: 22px;
+}
+
+@media (max-width: 600px) {
+  .navigation-links > div > a {
+    font-size: 15px;
+  }
 }
 
 .club-description{
@@ -46,31 +61,41 @@ body {
 }
 
 .club-description h1 {
-  font-size: 10vh;
+  font-size: 55px;
   font-weight: 500;
   margin-bottom: 0px;
 }
 
-.club-description p {
-  margin-top:25px;
-  margin-bottom: 25px;
+@media (max-width: 600px) {
+  .club-description h1 {
+    font-size: 40px;
+  }
 }
 
+.club-description p {
+  margin-top:25px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 600px) {
+  .club-description p {
+    font-size: 15px;
+  }
+}
 
 .join-slack {
   background-color:white;
   border-radius: 10px;
   border: none;
   color: black;
-  padding: 15px 32px;
+  padding: 15px 30px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
 }
 
 .join-slack:hover {
-  border: 1px solid #F2CDDC;
+  background-color:  #F2CDDC;
   transition: 1s;
 }
 
