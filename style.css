@@ -2,78 +2,51 @@ body {
   background-color: rgb(86, 101, 236);
 }
 
+
 .header {
-  min-height: 100 vh; /*viewable screen's height*/
+  position: absolute;
   width: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
 }
 
-#logo{ 
+#logo { 
   position: absolute;
   top: 0px;
-  z-index: 800;
-  opacity: 1;
-  margin-bottom: 25px;
+  margin-bottom: px;
   margin-right: 25px;
 } 
 
-.nav {
-  display:flex;
-  padding: 2% 6%;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
-.navigation-links{
-  flex: 1;
-  text-align: right;
-}
-
-.navigation-links ul li{
-  list-style: none;
-  display:inline-block;
-  padding: 20px 12px;
+.navigation-links {
+  display: flex;
+  flex-direction: row;
   position: relative;
-
+  float: right;
 }
 
-.navigation-links ul li a {
-  color:white;
-  font-family: Tahoma, sans-serif;
+.navigation-links > div {
+  margin: 1vw;
+  padding: 14px 16px;
+  color: white;
+}
+
+.navigation-links > div > a {
+  text-align: right;
   text-decoration: none;
-  font-size: 22px;
-}
-
-.navigation-links ul li::after { /*inserts after nav links*/
-  content: '';
-  width: 0%;
-  height: 2px;
-  background: white;
-  display: block;
-  margin: auto;
-  transition: 0.5s;
-}
-
-.navigation-links ul li:hover:after {
-  width: 90%; /*Underlines nav links when hovered over*/
+  color: white;
+  font-family: Tahoma, sans-serif;
+  font-size: 3vh;
 }
 
 .club-description{
   color:white;
   font-family: Tahoma, sans-serif;
-  width:90%;
+  width: 100%;
   position: absolute;
-  top:450%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 30vh;
   text-align: center;
 }
 
 .club-description h1 {
-  font-size: 60px;
+  font-size: 10vh;
   font-weight: 500;
   margin-bottom: 0px;
 }
@@ -86,6 +59,7 @@ body {
 
 .join-slack {
   background-color:white;
+  border-radius: 10px;
   border: none;
   color: black;
   padding: 15px 32px;
@@ -97,26 +71,10 @@ body {
 
 .join-slack:hover {
   border: 1px solid #F2CDDC;
-  background: #f09bbd;
   transition: 1s;
 }
 
-.new-button {
-  background-color:white;
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 32px;
-}
 
-.new-button:hover {
-  border: 1px solid #F2CDDC;
-  background: #f09bbd;
-  transition: 1s;
-}
 
 
 
