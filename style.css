@@ -8,7 +8,7 @@ body {
   left: 0px;
   width: 125px;
   height: 125px;
-  margin-bottom: 25px; 
+  margin-bottom: 25px;
   display: flex;
 } 
 
@@ -156,7 +156,7 @@ body {
 /*media query for responsive web design*/
 @media (max-width: 600px) {
   /*size of elements decreases*/
-  #logo { 
+  .logo { 
     width: 90px;
     height: 90px;
   }
@@ -173,7 +173,7 @@ body {
     font-size: 15px;
   }
 
-  .about-resources-top > h1{
+  .about-resources-top > h1 {
     font-size: 40px;
   }
 
@@ -184,7 +184,7 @@ body {
   .resources-flex-container {
     display: flex;
     flex-direction: column;
-    top: 50vh;
+    top: 40vh;
     position: relative;
     left: 12vw;
     width: 100%;
@@ -200,9 +200,9 @@ body {
 
   .club-goals > ul {
     font-size: 15px;
-    margin-left: 14vw;
+    margin-left: 2vw;
     text-align: left;
-    width: 200%;
+    width: 450%;
   }
 
   .club-goals > h2 {
