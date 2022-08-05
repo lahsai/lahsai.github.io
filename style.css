@@ -193,11 +193,15 @@ body {
   /*text is centered on mobile devices*/
   .description {
     font-size: 15px;
-    margin-left: 20vw;
-    text-align: center;
+    margin-left: 25vw;
+    text-align: left;
     width: 200%;
   }
 
+  .description > h2 {
+    text-align: center;
+  }
+  
   .club-goals > ul {
     font-size: 15px;
     margin-left: 2vw;
@@ -207,8 +211,8 @@ body {
 
   .club-goals > h2 {
     text-align: center;
-    margin-left: 20vw;
-    width: 200%;
+    margin-left: 10vw;
+    width: 400%;
   }
 }
 
