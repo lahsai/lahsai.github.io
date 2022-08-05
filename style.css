@@ -3,14 +3,11 @@ body {
 }
 
 
-.header {
-  position: absolute;
-  width: 100%;
-}
 
 #logo { 
   position: absolute;
   top: 0px;
+  left: 0px;
   width: 125px;
   height:125px;
   margin-bottom: 25px;
@@ -27,6 +24,7 @@ body {
 .navigation-links {
   display: flex;
   flex-direction: row;
+  top: 8px;
   position: relative;
   float: right;
 }
@@ -42,7 +40,7 @@ body {
   text-decoration: none;
   color: white;
   font-family: Tahoma, sans-serif;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 @media (max-width: 600px) {
@@ -99,7 +97,92 @@ body {
   transition: 1s;
 }
 
+.about-resources-body { 
+  height: 100vh;
+  background: linear-gradient( /*splits background into blue and white - learned from https://www.youtube.com/watch?v=XIfEWsF2T5A*/
+    to bottom,
+    rgb(86, 101, 236) 0%,
+    rgb(86, 101, 236) 50%,
+    white 50%,
+    white 120%
+  );
+
+}
+
+.about-resources-header {
+  position: absolute;
+  top: 25vh;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.about-resources-header > h1{
+  color: white;
+  text-shadow: 2px 2px 1px #da719b;
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 55px;
+  font-weight: 500;
+ 
+
+}
+
+.about-resources-header > p {
+  color: white;
+  font-family: Tahoma, Arial, sans-serif;
+  color: white;
+
+}
+.about-flex-container {
+  
+  display: flex;
+  flex-direction: row;
+  top: 50vh;
+  position: relative;
+}
+
+.description {
+  width: 80%;
+  font-size: 18px;
+  font-family: Verdana, Arial, sans-serif;
+  margin-left: 8vw;
+  margin-top: 2vw;
+}
+
+.description > h2,.resources-flex-container > div > h2  {
+  font-size: 20px;
+  font-weight: normal;
+  color:  rgb(86, 101, 236);
+  text-shadow: 1px 1px 1px #ff5cdc;
+}
+.club-goals > p {
+  color:  rgb(86, 101, 236);
+  text-shadow: 1px 1px 1px #ff5cdc;
+}
+
+.club-goals > ul {
+  width: 150%;
+  font-size: 18px;
+}
+
+.club-goals {
+  margin-left: 12vw;
+}
+
+.club-goals, .resources-flex-container > div {
+  width: 50%;
+  font-size: 20px;
+  font-family: Verdana, Arial, sans-serif;
+  margin-top: 2vw;
+  margin-left: 20px;
 
 
+}
+
+.resources-flex-container {
+  display: flex;
+  flex-direction: column;
+  top: 50vh;
+  position: relative;
+}
 
 
