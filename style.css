@@ -49,7 +49,6 @@ body {
   font-weight: 500;
   margin-bottom: 0px;
   text-shadow: 2px 2px 1px #da719b;
-
 }
 
 .club-description > p { /*styling for subtext*/
@@ -158,6 +157,18 @@ body {
 /*media query for responsive web design*/
 @media (max-width: 600px) {
   /*size of elements decreases*/
+  .join-slack { /*styling for "Join Slack" button*/
+    background-color:white;
+    border-radius: 10px; /*rounds borders*/
+    border: none;
+    color: black;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+  
   .logo { 
     width: 90px;
     height: 90px;
