@@ -116,7 +116,7 @@ body {
 .description {
   width: 80%;
   font-size: 18px;
-  font-family: Verdana, Arial, sans-serif;
+  font-family: Calibri, Arial, sans-serif;
   /*margins based on viewport height and width*/
   margin-left: 8vw; 
   margin-top: 2vh;
@@ -140,7 +140,7 @@ body {
 .club-goals, .resources-flex-container > div {
   width: 50%;
   font-size: 20px;
-  font-family: Verdana, Arial, sans-serif;
+  font-family: Calibri, Arial, sans-serif;
   margin-top: 2vh;
   margin-left: 15vw;
 }
@@ -155,7 +155,7 @@ body {
 }
 
 /*media query for responsive web design*/
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   /*size of elements decreases*/
   .join-slack { /*styling for "Join Slack" button*/
     background-color:white;
@@ -190,6 +190,10 @@ body {
     font-size: 40px;
   }
 
+  .about-resources-top > p {
+    width: 90%;
+  }
+
   .about-flex-container {
     flex-direction: column; /*flexbox becomes one column instead of one row*/
   }
@@ -199,32 +203,25 @@ body {
     flex-direction: column;
     top: 40vh;
     position: relative;
-    left: 12vw;
     width: 100%;
   }
 
-  /*text is centered on mobile devices*/
   .description {
     font-size: 15px;
-    margin-left: 25vw;
     text-align: left;
-    width: 200%;
+    width: 150%;
   }
 
-  .description > h2 {
-    text-align: center;
-  }
-  
+
   .club-goals > ul {
     font-size: 15px;
-    margin-left: 2vw;
     text-align: left;
-    width: 450%;
   }
 
-  .club-goals > h2 {
-    text-align: center;
-    margin-left: 10vw;
-    width: 400%;
+  .club-goals {
+    font-size: 15px;
+    text-align: left;
+    width: 82%;
+    margin-left:22%;
   }
 }
