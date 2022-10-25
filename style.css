@@ -37,7 +37,7 @@ body {
 
 .club-description {
   color:white;
-  font-family: Tahoma, sans-serif;
+  font-family: Calibri, sans-serif;
   width: 100%;
   position: absolute;
   top: 30vh; /*club description's top edge is positioned 30% of the viewport's height from the top of the screen*/
@@ -49,6 +49,7 @@ body {
   font-weight: 500;
   margin-bottom: 0px;
   text-shadow: 2px 2px 1px #da719b;
+  font-family: Tahoma, sans-serif;
 }
 
 .club-description > p { /*styling for subtext*/
@@ -195,7 +196,12 @@ body {
   }
 
   .about-flex-container {
-    flex-direction: column; /*flexbox becomes one column instead of one row*/
+    flex-direction: column; /*flexbox becomes one column instead of one row*/    
+  }
+
+  .about-flex-container > div {
+    width: 40vw;
+    height: 23vh;
   }
 
   .resources-flex-container {
@@ -209,19 +215,22 @@ body {
   .description {
     font-size: 15px;
     text-align: left;
-    width: 150%;
+    margin: 10px auto;
   }
-
-
-  .club-goals > ul {
-    font-size: 15px;
-    text-align: left;
+  
+  .description > p {
+    width: 180%;
   }
 
   .club-goals {
-    font-size: 15px;
-    text-align: left;
-    width: 82%;
-    margin-left:22%;
+    margin: 10px auto;
   }
+
+  .club-goals > ul {
+    font-size: 15px;
+    width: 160%;
+  }
+
+
+
 }
