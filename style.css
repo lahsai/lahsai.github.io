@@ -169,6 +169,12 @@ body {
     font-size: 13px;
   }
 
+  .navigation-links > div {
+    /*specifies spacing between flexbox elements*/
+    margin: 1vw; 
+    padding: 14px 10px;
+    color: white;
+  }
   
   .logo { 
     width: 90px;
@@ -176,7 +182,7 @@ body {
   }
 
   .navigation-links > div > a {
-    font-size: 13px;
+    font-size: 10px;
   }
 
   .club-description > h1{
