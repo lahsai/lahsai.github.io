@@ -10,22 +10,22 @@ body {
     height: 125px;
     margin-bottom: 25px;
     display: flex;
-  } 
+} 
   
-  .navigation-links {
+.navigation-links {
     display: flex; /*flexbox for navigation links*/
     flex-direction: row;
     top: 8px;
     position: relative;
     float: right; /*positioned on top right of page*/
-  }
+}
   
-  .navigation-links > div {
+.navigation-links > div {
     /*specifies spacing between flexbox elements*/
     margin: 1vw; 
     padding: 14px 16px;
     color: white;
-  }
+}
   
 .navigation-links > div > a { /*specifies styling for text*/
     text-align: right; 
@@ -44,51 +44,34 @@ body {
 .row {
     top: 33vh;
     display:flex;
-    left: 30vh;
+    left: 13vw;
     position: relative;
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
     .row {
-      display: block;
-      left: 45vw;
-      top: 40vh;
-    }
-    .box {
-        width: 215px;
-        height: auto;
-        padding: 0 0px;
-    }
-    .container > img {
-        width:  215px;
-        height: auto;
-        object-fit: cover;
+        display: inline-block;
     }
     .logo { 
         width: 90px;
         height: 90px;
-    }
+      }
     
-    .navigation-links > div > a {
-        font-size: 13px;
-    }
-
-    .title {
-        width: 90%;
-    }
-
-    .title > h1 {
-        font-size: 40px;
-        float: left;
-    }
-    
+      .navigation-links > div > a {
+        font-size: 10px;
+      }
+      h1 {
+        font-size: 90px;
+      }
+      .title {
+        margin-left: -20vw;
+      }
 }
-  
+
 
 .box {
-    width: 44.3%;
+    width: 350px;
     padding: 0 10px;
- 
 }
 
 .container {
