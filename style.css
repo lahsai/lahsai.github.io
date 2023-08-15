@@ -4,8 +4,8 @@ body {
 
 .logo { 
   position: absolute;
-  top: 0px; /*positioned on top left of page*/
-  left: 0px;
+  top: 1vh; /*positioned on top left of page*/
+  left: 1vw;
   width: 125px;
   height: 125px;
   margin-bottom: 25px;
