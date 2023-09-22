@@ -57,15 +57,26 @@ body {
   margin-bottom: 40px;
 }
 
-.join-slack { /*styling for "Join Slack" button*/
+.sign-up { /*styling for "Sign Up" button*/
   background-color:white;
   border-radius: 10px; /*rounds borders*/
   border: none;
   color: black;
-  padding: 15px 30px;
+  padding: 1.5em 3em;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1em;
+}
+
+.sign-up:hover{
+  background-color:black;
+  border-radius: 10px; /*rounds borders*/
+  border: none;
+  color: white;
+  padding: 1.5em 3em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
 }
 
 .join-slack:hover { /*button turns pink when hovered over*/
@@ -154,6 +165,28 @@ body {
   position: relative;
   left: -13vw;
 }
+.resource-container {
+  font-family: Calibri;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.resource {
+  font-size: 2em;
+  padding: 0.3em 1em 0.3em 1em;
+  background: #ababab;
+  cursor: pointer;
+  gap: 0.5em;
+  transition: 0.3s ease-in-out;
+}
+
+.resource:hover {
+  background: #949494;
+}
 
 /*media query for responsive web design*/
 @media (max-width: 800px) {
@@ -239,4 +272,22 @@ body {
 
 
 
+}
+
+
+.content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.resources {
+  width: 100%;
+}
+
+.resource img {
+  margin-right: 0.5em;
 }
