@@ -62,18 +62,19 @@ body {
   border-radius: 10px; /*rounds borders*/
   border: none;
   color: black;
-  padding: 1.5em 3em;
+  padding: 1.2em 2.6em;
   text-align: center;
   text-decoration: none;
   font-size: 1em;
+  
 }
 
 .sign-up:hover{
-  background-color:black;
+  background-color:#F2CDDC;
   border-radius: 10px; /*rounds borders*/
   border: none;
   color: white;
-  padding: 1.5em 3em;
+  padding: 1.2em 2.6em;
   text-align: center;
   text-decoration: none;
   font-size: 1em;
