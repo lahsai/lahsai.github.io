@@ -1,294 +1,223 @@
-body {
-  background-color: rgb(86, 101, 236);
+:root {
+  --accent: #5b69ec;
+  --accent-heavy: #38408f;
+  --color: #ffffff;
+  --shadow: #d9d9d9;
+  --secondary: #787878;
 }
 
-.logo { 
-  position: absolute;
-  top: 1vh; /*positioned on top left of page*/
-  left: 1vw;
-  width: 125px;
-  height: 125px;
-  margin-bottom: 25px;
-  display: flex;
-} 
-
-.navigation-links {
-  display: flex; /*flexbox for navigation links*/
-  flex-direction: row;
-  top: 8px;
-  position: relative;
-  float: right; /*positioned on top right of page*/
+::-webkit-scrollbar {
+  display: none;
 }
 
-.navigation-links > div {
-  /*specifies spacing between flexbox elements*/
-  margin: 1vw; 
-  padding: 14px 16px;
-  color: white;
-}
-
-.navigation-links > div > a { /*specifies styling for text*/
-  text-align: right; 
-  text-decoration: none;
-  color: white;
-  font-family: Tahoma, sans-serif;
-  font-size: 20px;
-}
-
-.club-description {
-  color:white;
-  font-family: Calibri, sans-serif;
+img {
   width: 100%;
-  position: absolute;
-  top: 30vh; /*club description's top edge is positioned 30% of the viewport's height from the top of the screen*/
-  text-align: center;
+  height: 100%;
+  object-fit: contain;
 }
 
-.club-description > h1 { /*styling for main heading*/
-  font-size: 55px;
-  font-weight: 500;
-  margin-bottom: 0px;
-  text-shadow: 2px 2px 1px #da719b;
-  font-family: Tahoma, sans-serif;
-}
-
-.club-description > p { /*styling for subtext*/
-  margin-top: 25px;
-  margin-bottom: 40px;
-}
-
-.sign-up { /*styling for "Sign Up" button*/
-  background-color:white;
-  border-radius: 10px; /*rounds borders*/
-  border: none;
-  color: black;
-  padding: 1.2em 2.6em;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1em;
-  
-}
-
-.sign-up:hover{
-  background-color:#F2CDDC;
-  border-radius: 10px; /*rounds borders*/
-  border: none;
-  color: white;
-  padding: 1.2em 2.6em;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1em;
-}
-
-.join-slack:hover { /*button turns pink when hovered over*/
-  background-color:  #F2CDDC;
-  transition: 1s;
-}
-
-.about-resources-body { /*styling for the body of about.html and resources.html*/
+body {
+  width: 100vw;
   height: 100vh;
-  background: linear-gradient( /*splits background into blue and white - learned from https://www.youtube.com/watch?v=XIfEWsF2T5A*/
-    to bottom,
-    rgb(86, 101, 236) 0%,
-    rgb(86, 101, 236) 50%,
-    white 50%,
-    white 100%
-  );
-  background-repeat: no-repeat; /*prevents linear gradient from alternating between blue and white*/
+  margin: 0;
+  color: var(--color);
+  font-family: "Nunito Sans";
 }
 
-/*styling for the top or blue section of the about.html and resources.html pages*/
-.about-resources-top { 
-  position: absolute;
-  top: 25vh;
-  text-align: left;
-  margin-left: 20px;
-}
-
-.about-resources-top > h1 { 
-  color: white;
-  text-shadow: 2px 2px 1px #da719b; /*horizontal and vertical shadow of 2px, blur radius of 1px, and pink color*/
-  font-family: Tahoma, Arial, sans-serif;
-  font-size: 55px;
-  font-weight: 500;
-}
-
-.about-resources-top > p {
-  font-family: Tahoma, Arial, sans-serif;
-  color: white;
-}
-
-.about-flex-container { /*flex container for two elements*/
-  display: flex;
-  flex-direction: row;
-  top: 50vh;
-  position: relative;
-}
-
-/*styling for first flexbox element*/
-.description {
-  width: 80%;
-  font-size: 18px;
-  font-family: Calibri, Arial, sans-serif;
-  /*margins based on viewport height and width*/
-  margin-left: 8vw; 
-  margin-top: 2vh;
-}
-
-/*styling for about.html heading and resources.html headings*/
-.description > h2, .resources-flex-container > div > h2, .club-goals > h2  {
-  font-size: 20px;
-  font-weight: normal;
-  color:  rgb(86, 101, 236);
-  text-shadow: 1px 1px 1px #ff5cdc;
-}
-
-/*styling for bulleted list in about.html page*/
-.club-goals > ul {
-  width: 150%;
-  font-size: 18px;
-}
-
-/*styling for second element of about.html flexbox and all elements of resources.html flexbox*/
-.club-goals, .resources-flex-container > div {
-  width: 50%;
-  font-size: 20px;
-  font-family: Calibri, Arial, sans-serif;
-  margin-top: 2vh;
-  margin-left: 15vw;
-}
-
-/*flex container for resources*/
-.resources-flex-container {
-  display: flex;
-  flex-direction: column;
-  top: 50vh;
-  position: relative;
-  left: -13vw;
-}
-.resource-container {
-  font-family: Calibri;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1em;
-  padding: 1em;
-  box-sizing: border-box;
-}
-
-.resource {
-  font-size: 2em;
-  padding: 0.3em 1em 0.3em 1em;
-  background: #ababab;
+button {
+  font-size: 1.5em;
+  color: var(--accent);
+  border-radius: 6px;
+  background: var(--color);
+  padding: 0.3em;
+  width: 8em;
+  border-style: none;
+  transition: 0.3s ease-in-out;
   cursor: pointer;
   gap: 0.5em;
-  transition: 0.3s ease-in-out;
 }
 
-.resource:hover {
-  background: #949494;
+button:hover {
+  background: var(--shadow);
 }
 
-/*media query for responsive web design*/
-@media (max-width: 800px) {
-  /*size of elements decreases*/
-  .join-slack { /*styling for "Join Slack" button*/
-    background-color:white;
-    border-radius: 10px; /*rounds borders*/
-    border: none;
-    color: black;
-    padding: 15px 15px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 13px;
-  }
-
-  .navigation-links > div {
-    /*specifies spacing between flexbox elements*/
-    margin: 1vw; 
-    padding: 14px 10px;
-    color: white;
-  }
-  
-  .logo { 
-    width: 90px;
-    height: 90px;
-  }
-
-  .navigation-links > div > a {
-    font-size: 10px;
-  }
-
-  .club-description > h1{
-    font-size: 40px;
-  }
-
-  .club-description p {
-    font-size: 15px;
-  }
-
-  .about-resources-top > h1 {
-    font-size: 40px;
-  }
-
-  .about-resources-top > p {
-    width: 90%;
-  }
-
-  .about-flex-container {
-    flex-direction: column; /*flexbox becomes one column instead of one row*/    
-  }
-
-  .about-flex-container > div {
-    width: 40vw;
-    height: 35vh;
-  }
-
-  .resources-flex-container {
-    display: flex;
-    flex-direction: column;
-    top: 40vh;
-    position: relative;
-    width: 100%;
-  }
-
-  .description {
-    font-size: 15px;
-    text-align: left;
-    margin: 10px auto;
-  }
-  
-  .description > p {
-    width: 180%;
-  }
-
-  .club-goals {
-    margin: 10px auto;
-  }
-
-  .club-goals > ul {
-    font-size: 15px;
-    width: 160%;
-  }
-
-
-
+::selection {
+  background: var(--color);
+  color: var(--accent);
 }
 
+.centered-vertically {
+  display: flex;
+  align-items: center;
+}
 
-.content {
+.centered-children {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introduction-container {
+  width: 40em;
+  flex-direction: column;
+}
+
+.introduction-container img:not(.button-icon) {
+  width: 8em;
+  height: 8em;
+}
+
+.title {
+  font-size: 2.5em;
+  font-weight: bold;
+  text-shadow: var(--accent-heavy) 2px 2px 5px;
+}
+
+.subtitle {
+  font-size: 1.5em;
+}
+
+.break {
+  margin-bottom: 0.5em;
+}
+
+.button-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.header {
   position: absolute;
   left: 0;
   top: 0;
   width: 100vw;
-  height: 100vh;
-  flex-direction: column;
+  gap: 2em;
+  padding: 1em;
+  box-sizing: border-box;
 }
 
-.resources {
-  width: 100%;
+.header a {
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  font-size: 1.2em;
+  color: var(--color);
+}
+
+.header a:hover {
+  text-shadow: var(--shadow) 0 0 5px;
+}
+
+.banner {
+  width: 100vw;
+  height: 40vh;
+  background: var(--accent);
+  padding-left: 3em; 
+  box-sizing: border-box;
+}
+
+.content {
+  display: grid; 
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.about-title {
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: var(--shadow) 2px 2px 5px;
+  color: var(--accent);
+}
+
+.about-title::selection {
+  background: var(--accent);
+  color: var(--color);
+}
+
+.about-text {
+  color: var(--secondary);
+  font-size: 1.5em;
+}
+
+.about {
+  padding: 1.5em; 
+  box-sizing: border-box;
+}
+
+.resources-container {
+  width: 95vw;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.resource {
+  background: var(--shadow);
+  color: var(--secondary);
+  font-size: 1.5em;
+  gap: 0.5em;
+  padding: 1em;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.resource:hover {
+  filter: brightness(0.8);
 }
 
 .resource img {
-  margin-right: 0.5em;
+  width: 1.5em;
+  height: 1.5em;
+  filter: invert(50%) sepia(0%) saturate(0%) hue-rotate(146deg) brightness(92%) contrast(84%);
+}
+
+.team-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.team {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  background: var(--accent);
+  box-shadow: var(--shadow) 2px 2px 0.5em;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+.team:hover {
+  transform: scale(1.02);
+}
+
+.team img {
+  width: 100%;
+  height: 13em;
+  object-fit: cover;
+}
+
+.team-title {
+  font-size: 1.2em;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  box-sizing: border-box;
+  user-select: none;
+  background: rgba(91, 105, 236, 0.7);
+  width: 100%;
+}
+
+.role {
+  position: absolute;  
+}
+
+.selected {
+  text-shadow: var(--shadow) 0 0 10px;
+  font-weight: bold;
 }

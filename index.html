@@ -1,40 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <title>LAHS AI</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- ownership verification meta tag for Google Search Console -->
-  <meta name="google-site-verification" content="iM5fhBbc-FcIq26R34LP95haDHTpgGGQypBYg3sg12c"/> 
-  <!-- import the webpage's stylesheet -->
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <!-- header includes logo and navigation bar -->
-  <div class="header"> 
-    <div class="logo">
-      <img src="images/orgLogo1.png" alt="The AI For Social Good Initiative">
+<html>
+  <head>
+    <title>Social AI</title>
+    <link rel="icon" href="/assets/social_ai.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito Sans">
+  </head>
+  <body style="background: var(--accent)" class="centered-children">
+    <div class="header centered-vertically" style="justify-content: right">
+      <a href="/" class="selected">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/resources.html">Resources</a>
+      <a href="/team.html">Team</a>
     </div>
-    <div class="navigation-links">
-      <div><a href="index.html">Home</a></div>
-      <div><a href="about.html">What We Do</a></div>
-      <div><a href="resources.html">Resources</a></div>
-      <div><a href="team.html">Meet the Team</a></div>
+    <div class="introduction-container centered-children">
+      <img src="/assets/social_ai.png">
+      <div class="break"></div>
+      <div class="title">The AI For Social Good Initiative.</div>
+      <div class="subtitle" style="text-align: center">The AI For Social Good Initiative aims to encourage students to learn about AI and its limitless applications for social good.</div>
+      <div class="break"></div>
+      <div style="display: flex; gap: 0.5em">
+        <button class="centered-children" onclick="window.location.href='https://join.slack.com/t/aiforsocialgoodclub/shared_invite/zt-2g5aqq3fk-4jhLYSgeEX~CZC1Y5dI0MA'"><img class="button-icon" src="/assets/icon_slack.png">Slack</button>
+        <button class="centered-children" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSd-_rsdzZvVqll49T315b7wynLeYk7NWx4AG3R-5ZSJAP2JGA/viewform'"><img class="button-icon" src="/assets/icon_forms.png">Signup</button>
+      </div>
     </div>
-  </div>
-
-  <div class="club-description">
-    <h1>The AI For Social Good Initiative.</h1>
-    <p>The AI For Social Good Initiative aims to encourage students to learn about AI and its
-      limitless applications for social good.</p>
-    <div class="buttons">
-        <a href="https://forms.gle/SvzdeWyEsTyEoSgk7"
-        target="_blank" class="sign-up">Sign Up!</a>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>

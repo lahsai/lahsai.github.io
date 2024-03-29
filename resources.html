@@ -1,55 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <title>LAHS AI</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="google-site-verification" content="iM5fhBbc-FcIq26R34LP95haDHTpgGGQypBYg3sg12c" />
-  <!-- import the webpage's stylesheet -->
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body class="about-resources-body" style="overflow: hidden">
-  <div class="header">
-    <div class="logo">
-      <img src="images/orgLogo1.png" alt="The AI For Social Good Initiative">
+<html>
+  <head>
+    <title>Social AI | Resources</title>
+    <link rel="icon" href="/assets/social_ai.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito Sans">
+  </head>
+  <body>
+    <div class="header centered-vertically" style="justify-content: right">
+      <a href="/">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/resources.html" class="selected">Resources</a>
+      <a href="/team.html">Team</a>
     </div>
-    <div class="navigation-links">
-      <div><a href="index.html">Home</a></div>
-      <div><a href="about.html">What We Do</a></div>
-      <div><a href="resources.html">Resources</a></div>
-      <div><a href="team.html">Meet the Team</a></div>
-    </div>
-  </div>
-
-  <!-- resources header and subtext -->
-  <div class="about-resources-top">
-    <h1>Resources</h1>
-    <p>This page is for club members. Links for resources and further learning will be posted here after each meeting.</p>
-    <div class="resources centered-children">
-      <div class="centered-children" style="flex-direction: column">
-        <br>
-        <div class="resource-container">
-          <div class="resource centered-vertically"
-            onclick="window.open('https://drive.google.com/drive/folders/1fYGqmXb3zIAqnniVECp8J9VBcawruPX_', '_blank')">
-            <img class="icon" src="/images/icon_book.png">An Introductory AI Essentials Book</div>
-          <div class="resource centered-vertically"
-            onclick="window.open('https://www.edx.org/learn/artificial-intelligence/harvard-university-cs50-s-introduction-to-artificial-intelligence-with-python', '_blank')">
-            <img class="icon" src="/images/icon_course.png">CS50's Introduction to Artificial Intelligence with Python
-          </div>
-          <div class="resource centered-vertically"
-            onclick="window.open('https://www.coursera.org/specializations/machine-learning-introduction', '_blank')"><img
-              class="icon" src="/images/icon_course.png">Coursera Machine Learning Specialization</div>
-          <div class="resource centered-vertically"
-            onclick="window.open('https://docs.google.com/document/d/1Ztimomv6eaxBpuEYz6RQ89z-lawSiiX2_0LBvcCS4hw/edit', '_blank')">
-            <img class="icon" src="/images/icon_doc.png">Resources/Further Reading by Meeting</div>
+    <div class="content">
+      <div class="banner centered-vertically">
+        <div>
+          <div class="title">Resources</div>
+          <div class="subtitle">This page is for club members. Links for resources and further learning will be posted here after each meeting.</div>
+        </div>
+      </div>
+      <div class="centered-children">
+        <div class="resources-container">
+          <a target="_blank" href="https://drive.google.com/drive/folders/1fYGqmXb3zIAqnniVECp8J9VBcawruPX_" class="resource centered-vertically"><img src="/assets/icon_book.png">An Introductory AI Essentials Book</a>
+          <a target="_blank" href="https://www.edx.org/learn/artificial-intelligence/harvard-university-cs50-s-introduction-to-artificial-intelligence-with-python" class="resource centered-vertically"><img src="/assets/icon_book.png">CS50's Introduction to Artificial Intelligence with Python</a>
+          <a target="_blank" href="https://www.coursera.org/specializations/machine-learning-introduction" class="resource centered-vertically"><img src="/assets/icon_course.png">Coursera Machine Learning Specialization</a>
+          <a target="_blank" href="https://docs.google.com/document/d/1Ztimomv6eaxBpuEYz6RQ89z-lawSiiX2_0LBvcCS4hw/edit" class="resource centered-vertically"><img src="/assets/icon_doc.png">Resources/Further Reading by Meeting</a>
         </div>
       </div>
     </div>
-  </div>
-</body>
-
-
+  </body>
 </html>
