@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Social AI | About</title>
+    <link rel="icon" href="/assets/social_ai.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito Sans">
+    <script src="script.js"></script>
+  </head>
+  <body style="display: grid; grid-template-rows: auto 1fr">
+    <div class="header centered-vertically" style="justify-content: right; background: var(--accent); position: relative;">
+      <a href="/">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/resources.html">Resources</a>
+      <a href="/newsletter.html" class="selected">Newsletter</a>
+      <a href="/team.html">Team</a>
+    </div>
+    <div class="content" style="padding: 1rem; box-sizing: border-box; height: calc(100vh - 3.5rem)">
+      <div class="newsletter-title centered-children" style="padding-bottom: 1rem">Exciting Recent Developments in AI!</div>
+      <div id="newsletterContainer" class="newsletter-card-container">
+        <div class="newsletter-card" onclick="openTopic(this)" id="0">
+          <img src="https://images.inc.com/uploaded_files/image/1920x1080/getty_517129164_279516.jpg">
+          <div class="topic-title"><div>AI+Environment</div></div>
+        </div>
+        <div class="newsletter-card" onclick="openTopic(this)" id="1">
+          <img src="https://www.cio.com/wp-content/uploads/2023/12/shutterstock_2394640901.jpg?quality=50&strip=all&w=1024">
+          <div class="topic-title"><div>AI+Buisiness</div></div>
+        </div>
+        <div class="newsletter-card" onclick="openTopic(this)" id="2">
+          <img src="https://www.ucsfhealth.org/-/media/project/ucsf/ucsf-health/education/hero/top-ten-foods-for-health-2x.jpg">
+          <div class="topic-title"><div>AI+Health</div></div>
+        </div>
+        <div class="newsletter-card" onclick="openTopic(this)" id="3">
+          <img src="https://www.designingbuildings.co.uk/w/images/6/64/Design2.jpg">
+          <div class="topic-title"><div>AI+Design</div></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
