@@ -1,0 +1,312 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans";
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover:not(.button, .navigation-item) {
+    text-decoration: underline;
+}
+
+input {
+    outline: 0;
+    border-radius: 3rem;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Open Sans";
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding: 0.3rem 0.6rem;
+    border-color: var(--text-inversed-secondary)
+}
+
+input:focus {
+    border-color: var(--text-inversed);
+}
+
+.content {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+}
+
+.landing-page {
+    background-image: linear-gradient(to left bottom, var(--accent), var(--accent-light));
+}
+
+.centered-children {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centered-vertically {
+    display: flex;
+    align-items: center;
+}
+
+.centered-horizontally {
+    display: flex;
+    justify-content: center;
+}
+
+.main-content {
+    width: 40rem;
+    color: var(--text);
+    text-align: center;
+    user-select: none;
+}
+
+.main-icon-container {
+    height: 10rem;
+}
+
+.main-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10rem;
+    height: 10rem;
+}
+
+.animated-main-icon {
+    animation: infinite opacity-change 3s ease-in-out;
+}
+
+.button {
+    gap: 1rem;
+    border-radius: 3rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--accent);
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-secondary);
+    font-family: "Open Sans";
+    padding: 0.5rem 1.5rem;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    transition: 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 8px 24px;
+}
+
+.button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.navigation {
+    z-index: 9999;
+    gap: 2rem;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    user-select: none;
+}
+
+.navigation-item {
+    font-size: 1.2rem;
+    color: var(--text);
+    font-weight: 300;
+}
+
+.navigation-item:hover {
+    color: var(--text-secondary);
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.next-page-lead {
+    position: absolute;
+    bottom: 2rem;
+    transition: 0.3s ease-in-out;
+}
+
+.next-page-lead:hover {
+    bottom: 1.5rem;
+}
+
+.next-page-lead img:first-child {
+    width: 2rem;
+    height: 2rem;
+    opacity: 0.8;
+}
+
+.about-content-container {
+    width: 40rem;
+}
+
+.about-content-container h2, h3, h4 {
+    color: var(--text-inversed);
+    text-align: center;
+}
+
+.about-content-container h2 {
+    font-family: "Roboto";
+    font-weight: 500;
+}
+
+.about-content-container h4 {
+    font-weight: 300;
+    font-size: 1.2rem;
+    user-select: text;
+}
+
+.about-content-container h4::selection {
+    background: var(--accent);
+    color: var(--text);
+}
+
+.about-content-container h3 {
+    font-weight: 500;
+}
+
+.task-item {
+    border-radius: 50%;
+    background: var(--accent);
+    padding: 0.8rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.task-item img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(0) invert(1);
+}
+
+.task-card {
+    flex-direction: column; 
+    gap: 1rem;
+}
+
+.task-card h4 {
+    width: 12rem;
+}
+
+#deskView {
+    display: flex;
+}
+
+#mobileView {
+    display: none;
+}
+
+.carousel-indicator {
+    border-radius: 50%;
+    border-color: var(--text-inversed-secondary);
+    border-style: solid;
+    border-width: 1px;
+    background: transparent;
+    width: 0.5rem;
+    height: 0.5rem;
+    padding: 0;
+    cursor: pointer;
+}
+
+.selected-indicator {
+    background: var(--accent);
+}
+
+.text-inversed {
+    color: var(--text-inversed);
+}
+
+.text-inversed:hover {
+    color: var(--text-inversed-secondary);
+}
+
+.resource {
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 1px 1px 1px 8px;
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    text-decoration: none !important;
+    color: var(--text-inversed);
+    margin-bottom: 1rem;
+}
+
+.resource:last-child {
+    margin-bottom: 0;
+}
+
+.resource:hover {
+    filter: brightness(0.8);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 3rem;
+    background: var(--text-inversed-secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-inversed);
+}
+
+.resource-container {
+    height: 20rem;
+    overflow: auto;
+    padding-right: 1rem;
+}
+
+.team-card {
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--text-inversed-secondary);
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    width: 12rem;
+    grid-gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.team-card img {
+    width: 100%;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}

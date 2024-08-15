@@ -1,0 +1,55 @@
+:root {
+    --accent: #919bee;
+    --accent-light: #5B69EC;
+    --text: white;
+    --text-secondary: rgba(255, 255, 255, 0.8);
+    --text-inversed: rgb(58, 58, 58);
+    --text-inversed-secondary: rgba(58, 58, 58, 0.5);
+}
+
+@keyframes opacity-change {
+    from {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.7;
+    }
+}
+  
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-content {
+        width: 80vw !important;
+    }
+
+    .navigation {
+        top: 2rem;
+        left: 0;
+        text-align: center;
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .about-content-container {
+        width: 80vw !important;
+    }
+
+    #deskView {
+        display: none !important;
+    }
+
+    #mobileView {
+        display: grid !important;
+    }
+}

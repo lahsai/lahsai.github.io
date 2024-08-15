@@ -1,29 +1,104 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Social AI</title>
-    <link rel="icon" href="/assets/social_ai.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito Sans">
-  </head>
-  <body style="background: var(--accent)" class="centered-children">
-    <div class="header centered-vertically" style="justify-content: right">
-      <a href="/" class="selected">Home</a>
-      <a href="/about.html">About</a>
-      <a href="/resources.html">Resources</a>
-      <a href="/newsletter.html">Bulletin</a>
-      <a href="/team.html">Team</a>
-    </div>
-    <div class="introduction-container centered-children">
-      <img src="/assets/social_ai.png">
-      <div class="break"></div>
-      <div class="title">The AI For Social Good Initiative.</div>
-      <div class="subtitle" style="text-align: center">The AI For Social Good Initiative aims to encourage students to learn about AI and its boundless applications for social good.</div>
-      <div class="break"></div>
-      <div style="display: flex; gap: 0.5em">
-        <button class="centered-children" onclick="window.location.href='https://join.slack.com/t/aiforsocialgoodclub/shared_invite/zt-2g5aqq3fk-4jhLYSgeEX~CZC1Y5dI0MA'"><img class="button-icon" src="/assets/icon_slack.png">Slack</button>
-        <button class="centered-children" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSd-_rsdzZvVqll49T315b7wynLeYk7NWx4AG3R-5ZSJAP2JGA/viewform'"><img class="button-icon" src="/assets/icon_forms.png">Sign-Up!</button>
-      </div>
-    </div>
-  </body>
+    <head>
+        <title>AI For Social Good</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="assets/socialai_icon_background.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/global.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="script.js"></script>
+        <script>
+            window.history.scrollRestoration = 'manual' // reset scroll state on-load
+            // prevent automatic scroll when #about toggled
+            window.onload = function() {
+                document.querySelector('a[href="#about"]').addEventListener('click', function(event) {
+                    event.preventDefault()
+                    document.querySelector('#about').scrollIntoView({behavior: 'smooth'})
+                })
+                document.querySelector('a[href="#landing"]').addEventListener('click', function(event) {
+                    event.preventDefault()
+                    document.querySelector('#landing').scrollIntoView({behavior: 'smooth'})
+                })
+            
+            }
+        </script>
+    </head>
+    <body>
+        <div class="centered-children content landing-page" id="landing">
+            <div class="navigation centered-vertically">
+                <a class="navigation-item" href="index.html">Home</a>
+                <a class="navigation-item" href="resources.html">Resources</a>
+                <a class="navigation-item" href="bulletin.html">Bulletin</a>
+                <a class="navigation-item" href="team.html">Team</a>
+            </div>
+            <div class="main-content fade-in">
+                <div class="main-icon-container centered-children">
+                    <div style="position: relative; width: 10rem; height: 10rem">
+                        <img class="main-icon" src="assets/socialai_outline.png">
+                        <img class="main-icon animated-main-icon" src="assets/social_ai_mind.png">
+                    </div>
+                </div>
+                <h1>The AI For Social Good Initiative</h1>
+                <h2>The AI For Social Good Initiative aims to encourage students to learn about AI and its boundless applications for social good.</h2>
+                <br>
+                <div class="centered-children" style="gap: 1rem;">
+                    <a class="button centered-vertically" href="/" target="_blank"><img class="icon" src="assets/icon_slack.png">Slack</a>
+                    <a class="button centered-vertically" href="https://docs.google.com/forms/d/e/1FAIpQLSd-_rsdzZvVqll49T315b7wynLeYk7NWx4AG3R-5ZSJAP2JGA/viewform" target="_blank"><img class="icon" src="assets/icon_forms.png">Sign Up</a>
+                </div>
+            </div>
+            <div class="next-page-lead fade-in">
+                <a href="#about"><img src="assets/icon_down_arrow.png"></a>
+            </div>
+        </div>
+        <div class="content centered-children" id="about">
+            <div class="about-content-container">
+                <h2>WHY JOIN</h2>
+                <br>
+                <h4>Artificial Intelligence is one of the fastest growing industries in the world right now. From sectors such as healthcare, e-commerce, autonomous vehicles and cybersecurity to agriculture and more, AI is poised to leave a sizeable impact on society.</h4>
+                <br>
+                <br>
+                <div class="centered-horizontally" style="gap: 6rem; align-items: start;" id="deskView">
+                    <div class="centered-children task-card">
+                        <div class="task-item">
+                            <img id="img_0" src="assets/icon_discuss.png">
+                        </div>
+                        <h3 id="title_0">Discuss</h3>
+                        <h4 id="blurb_0">Discuss how AI technologies are currently being utilized for social good</h4>
+                    </div>
+                    <div class="centered-children task-card">
+                        <div class="task-item">
+                            <img id="img_1" src="assets/icon_learn.png">
+                        </div>
+                        <h3 id="title_1">Teach</h3>
+                        <h4 id="blurb_1">Learn about AI and ML techniques through lectures and guest speakers</h4>
+                    </div>
+                    <div class="centered-children task-card">
+                        <div class="task-item">
+                            <img id="img_2" src="assets/icon_create.png">
+                        </div>
+                        <h3 id="title_2">Collaborate</h3>
+                        <h4 id="blurb_2">Work collaboratively on AI projects for social good</h4>
+                    </div>
+                </div>
+                <div style="grid-template-rows: 1fr auto; gap: 1.5rem;" id="mobileView">
+                    <div class="centered-children task-card">
+                        <div class="task-item">
+                            <img id="img_variable" src="assets/icon_discuss.png">
+                        </div>
+                        <h3 id="title_variable">Discuss</h3>
+                        <h4 id="blurb_variable" style="height: 9rem">Discuss how AI technologies are currently being utilized for social good</h4>
+                    </div>
+                    <div class="centered-children" style="gap: 1rem">
+                        <button class="carousel-indicator selected-indicator" onclick="switchIndicator(0, this)"></button>
+                        <button class="carousel-indicator" onclick="switchIndicator(1, this)"></button>
+                        <button class="carousel-indicator" onclick="switchIndicator(2, this)"></button>
+                    </div>
+                </div>
+            </div>
+            <a href="#landing" style="position: absolute; bottom: 2rem; color: var(--accent)">back to top</a>
+        </div>
+    </body>
 </html>

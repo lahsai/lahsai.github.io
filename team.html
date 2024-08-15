@@ -1,68 +1,86 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Social AI | Team</title>
-  <link rel="icon" href="/assets/social_ai.png">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito Sans">
-</head>
-<body>
-  <div class="header centered-vertically" style="justify-content: right">
-    <a href="/">Home</a>
-    <a href="/about.html">About</a>
-    <a href="/resources.html">Resources</a>
-    <a href="/newsletter.html">Bulletin</a>
-    <a href="/team.html" class="selected">Team</a>
-  </div>
-  <div class="content">
-    <div class="banner centered-vertically" style="height: 20vh">
-      <div class="title">Meet The Team</div>
-    </div>
-    <div class="centered-children" style="padding: 1em; box-sizing: border-box;">
-      <div class="team-container">
-        <div class="team">
-          <div class="team-title role">President</div>
-          <img src="/assets/team/adit.jpg">
-          <div class="team-title">Adit Chintamaneni</div>
+    <head>
+        <title>Resources | AI For Social Good</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="assets/socialai_icon_background.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/global.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <!-- <div class="navigation centered-vertically" style="width: 100%; right: 0; top: 0; padding: 2rem; justify-content: right; background-image: linear-gradient(to left bottom, var(--accent), var(--accent-light));"> -->
+        <div class="navigation centered-vertically">
+            <a class="navigation-item" href="index.html">Home</a>
+            <a class="navigation-item" href="resources.html">Resources</a>
+            <a class="navigation-item" href="bulletin.html">Bulletin</a>
+            <a class="navigation-item" href="team.html">Team</a>
         </div>
-        <div class="team">
-          <div class="team-title role">Director of Projects</div>
-          <img src="/assets/team/vian.jpg" style="object-position: 50% 40%">
-          <div class="team-title">Vian Patel</div>
+        <div style="height: 120px; width: 100vw; overflow: hidden; position: absolute">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="var(--accent)" />
+                        <stop offset="100%" stop-color="var(--accent-light)" />
+                    </linearGradient>
+                </defs>
+                <path d="M-4.79,112.02 C202.88,-5.41 384.02,203.80 501.97,108.06 L500.00,0.00 L0.00,0.00 Z" fill="url(#gradient)"></path>
+            </svg>
         </div>
-        <div class="team">
-          <div class="team-title role">Director of Curriculum</div>
-          <img src="/assets/team/da-yi.jpg">
-          <div class="team-title">Da-Yi Wu</div>
+        <div class="content centered-children">
+            <div class="about-content-container centered-children fade-in" style="flex-direction: column;">
+                <h1>MEET THE TEAM</h1>
+                <br>
+                <h3>2024-2025 AI For Social Good Officers</h3>
+                <br>
+                <div class="team-container">
+                    <div class="team-card">
+                        <img src="assets/placeholder.png">
+                        <div>
+                            <h3>Hudson Etkin</h3>
+                            <h4>Co-President</h4>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <img src="assets/placeholder.png">
+                        <div>
+                            <h3>Dylan Po</h3>
+                            <h4>Co-President</h4>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <img src="assets/placeholder.png">
+                        <div>
+                            <h3>Kathleen Zhu</h3>
+                            <h4>Officer</h4>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <img src="assets/placeholder.png">
+                        <div>
+                            <h3>Caden Chau</h3>
+                            <h4>Officer</h4>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <img src="assets/placeholder.png">
+                        <div>
+                            <h3>Kai Etkin</h3>
+                            <h4>Officer</h4>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <img src="assets/placeholder.png">
+                        <div>
+                            <h3>Zachary Po</h3>
+                            <h4>Officer</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="team">
-          <div class="team-title role">Webmaster & Curriculum</div>
-          <img src="/assets/team/dylan.jpg">
-          <div class="team-title">Dylan Po</div>
-        </div>
-        <div class="team">
-          <div class="team-title role">Secretary & Communications</div>
-          <img src="/assets/team/ishaan.jpg" style="object-position: 50% 30%">
-          <div class="team-title">Ishaan Chandra</div>
-        </div>
-        <div class="team">
-          <div class="team-title role">Communications Officer</div>
-          <img src="/assets/team/pranav.jpg" style="object-position: 50% 30%">
-          <div class="team-title">Pranav Butaney</div>
-        </div>
-        <div class="team">
-          <div class="team-title role">Projects Officer</div>
-          <img src="/assets/team/hudson.jpg">
-          <div class="team-title">Hudson Etkin</div>
-        </div>
-        <div class="team">
-          <div class="team-title role">Communications Officer</div>
-          <img src="/assets/team/nevin.png" style="object-position: 50% 30%">
-          <div class="team-title">Nevin Pai</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-</body>
+    </body>
 </html>
