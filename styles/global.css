@@ -52,4 +52,13 @@
     #mobileView {
         display: grid !important;
     }
+
+    .team-container {
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .wave-header {
+        height: 150px !important;
+        width: 120vw !important;
+    }
 }
