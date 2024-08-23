@@ -1,6 +1,6 @@
 :root {
     --accent: #919bee;
-    --accent-light: #5B69EC;
+    --accent-light: #6a5bec;
     --text: white;
     --text-secondary: rgba(255, 255, 255, 0.8);
     --text-inversed: rgb(58, 58, 58);
@@ -51,14 +51,5 @@
 
     #mobileView {
         display: grid !important;
-    }
-
-    .team-container {
-        grid-template-columns: 1fr 1fr !important;
-    }
-
-    .wave-header {
-        height: 150px !important;
-        width: 120vw !important;
     }
 }
